@@ -34,19 +34,6 @@ def test_dark_theme_by_time_and_user_choice():
         is_dark_theme = False
     assert is_dark_theme is True
 
-def test_dark_theme_by_time_and_user_choice_v2():
-
-    current_time = time(hour=23)
-    dark_theme_enabled_by_user = None
-
-    if dark_theme_enabled_by_user:
-        is_dark_theme = True
-    elif 6 >= current_time.hour > 22 or dark_theme_enabled_by_user is False:
-        is_dark_theme = False
-    else:
-        is_dark_theme = True
-    assert is_dark_theme is True
-
 
 def test_find_suitable_user():
     """
